@@ -1,0 +1,49 @@
+# =============================================================================
+# REQUIREMENTS — Building Disaggregation Pipeline
+# =============================================================================
+
+# Core data science
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Geospatial
+geopandas>=0.14.0
+shapely>=2.0.0
+geopy>=2.4.0
+pyproj>=3.6.0
+rasterio>=1.3.0
+
+# ML Models
+xgboost>=2.0.0
+lightgbm>=4.0.0
+hdbscan>=0.8.33
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Explainability
+shap>=0.43.0
+
+# Hyperparameter tuning
+optuna>=3.4.0
+
+# LLM integration
+langchain-core>=0.2.0
+langchain-ollama>=0.1.0
+
+# LLM providers (install only what you need)
+# langchain-mistralai>=0.1.0    # For Mistral API
+# langchain-groq>=0.1.0         # For Groq API
+# langchain-google-genai>=1.0.0 # For Gemini API
+# langchain-anthropic>=0.1.0    # For Claude API
+
+# API keys management
+python-dotenv>=1.0.0
+
+# HTTP requests
+requests>=2.31.0
+
+# Warnings
+warnings

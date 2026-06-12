@@ -1,37 +1,75 @@
-# Python
+# =============================================================================
+# DONNÉES VOLUMINEUSES (trop lourdes pour GitHub)
+# =============================================================================
+# Datasets CSV
+data/raw/*/measured*.csv
+data/raw/*/*.csv
+*.csv
 
-__pycache__/
+# Fichiers TIF (hauteurs LiDAR — plusieurs Go)
+data/raw/*/height/
+*.tif
 
-*.py[cod]
+# Fichiers Excel volumineux
+*.xlsx
 
-*.egg-info/
+# Cache des profils
+profile_cache.json
+*_cache.json
 
+# =============================================================================
+# FICHIERS SENSIBLES
+# =============================================================================
 .env
+*.env
 
+# Clés API
+*api_key*
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+env/
 venv/
-
 .venv/
+ENV/
 
-# Garder la structure des dossiers mais ignorer les gros fichiers de données
-
-data/raw/*
-
-data/processed/*
-
-
-
-# Jupyter
-
+# Jupyter Notebook
 .ipynb_checkpoints/
+*.ipynb_checkpoints
 
+# =============================================================================
 # IDE
-
+# =============================================================================
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-*.code-workspace
-
+# =============================================================================
 # OS
-
+# =============================================================================
 .DS_Store
-
 Thumbs.db
+desktop.ini
+
+# =============================================================================
+# MODÈLES SAUVEGARDÉS (optionnel — décommenter si trop lourds)
+# =============================================================================
+# models/*.pkl
+# models/*.joblib
+# *.model
+
+# =============================================================================
+# OUTPUTS TEMPORAIRES
+# =============================================================================
+*.png
+*.jpg
+outputs/
