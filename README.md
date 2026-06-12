@@ -113,3 +113,19 @@ pip install -r requirements.txt
 - Training uses aggregated block data + open-data features only
 - No individual building data is stored or transmitted
 - Local LLM option available for sensitive datasets
+
+## 📁 Datasets
+
+To run this project, you need to manually add the following datasets to the repository structure:
+
+### **Folder**
+- Replace the following folder with the google drive datas and it should work:
+  - `data/Raw/Gelsenkirchen/`
+  - `data/Raw/Düsseldorf/`
+
+### **TABULA.xlsx**
+- Place the `TABULA.xlsx` file in:
+  - `data/Raw/`
+
+
+
