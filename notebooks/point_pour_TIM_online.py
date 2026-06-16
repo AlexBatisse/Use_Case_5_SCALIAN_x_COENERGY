@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. Charger ton fichier Excel
-df = pd.read_excel(r'C:\Users\alexandre.batisse\.vscode\Projet\Projet_Stage_Scalian\data\Raw\AdressesWOTIF.xlsx')  # Remplace par ton fichier
+df = pd.read_excel(r'C:\Users\alexandre.batisse\.vscode\Projet\Use_Case_5_SCALIAN_x_COENERGY\data\Raw\Gladbeck\CoordinatesForTIF.xlsx')  # Remplace par ton fichier
 df.columns = ['latitude', 'longitude']  # Ajuste les noms de colonnes si nécessaire
 
 # 2. Créer le contenu du fichier KML
@@ -31,7 +31,7 @@ kml_content += '''
 '''
 
 # 5. Sauvegarder le fichier KML
-with open(r'C:\Users\alexandre.batisse\.vscode\Projet\Projet_Stage_Scalian\data\Processed\points_pour_tim_online.kml', "w", encoding="utf-8") as f:
+with open(r'C:\Users\alexandre.batisse\.vscode\Projet\Use_Case_5_SCALIAN_x_COENERGY\data\Raw\Gladbeck\points_pour_tim_online.kml', "w", encoding="utf-8") as f:
     f.write(kml_content)
 
 print("✅ Fichier 'points_pour_tim_online.kml' généré avec succès !")
