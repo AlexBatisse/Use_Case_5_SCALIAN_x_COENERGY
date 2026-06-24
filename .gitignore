@@ -10,8 +10,13 @@ data/raw/*/*.csv
 data/raw/height/
 *.tif
 
+data/raw/Satellite_Files/
+*.jp2
+
 # Fichiers Excel volumineux
 *.xlsx
+
+*jpg
 
 # Cache des profils
 profile_cache.json

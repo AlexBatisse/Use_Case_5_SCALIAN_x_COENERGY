@@ -2,7 +2,7 @@ import webbrowser
 import time
 
 # 1. Charge les liens depuis ton fichier texte
-with open(r"C:\Users\alexandre.batisse\.vscode\Projet\Use_Case_5_SCALIAN_x_COENERGY\data\Raw\Gelsenkirchen\download_urls.txt", "r", encoding="utf-8") as f:
+with open(r"C:\Users\alexandre.batisse\.vscode\Projet\Use_Case_5_SCALIAN_x_COENERGY\data\Raw\Gladbeck\download_urls.txt", "r", encoding="utf-8") as f:
     links = [line.strip() for line in f if line.strip()]
 
 print(f"✅ {len(links)} liens chargés depuis 'TIFLinks.txt'")

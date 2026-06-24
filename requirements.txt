@@ -1,11 +1,12 @@
 # =============================================================================
-# REQUIREMENTS — Building Disaggregation Pipeline
+# REQUIREMENTS — Building Disaggregation Pipeline (Use Case 5)
 # =============================================================================
 
 # Core data science
 numpy>=1.24.0
 pandas>=2.0.0
 scikit-learn>=1.3.0
+scipy>=1.10.0
 
 # Geospatial
 geopandas>=0.14.0
@@ -29,6 +30,14 @@ shap>=0.43.0
 # Hyperparameter tuning
 optuna>=3.4.0
 
+# Image processing & PV detection
+Pillow>=10.0.0
+ultralytics>=8.0.0
+
+# Computer vision (pre-trained models)
+transformers>=4.30.0
+torch>=2.0.0
+
 # LLM integration
 langchain-core>=0.2.0
 langchain-ollama>=0.1.0
@@ -39,11 +48,14 @@ langchain-ollama>=0.1.0
 # langchain-google-genai>=1.0.0 # For Gemini API
 # langchain-anthropic>=0.1.0    # For Claude API
 
+# Energy data
+open-mastr>=0.14.0
+
 # API keys management
 python-dotenv>=1.0.0
 
 # HTTP requests
 requests>=2.31.0
 
-# Warnings
-warnings
+# Notebook
+ipython>=8.0.0
